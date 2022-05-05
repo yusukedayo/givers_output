@@ -34,5 +34,14 @@ module GiversOutput
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.generators do |g|
+      g.assets false
+			# assetsファイルを作成する機能をfalse
+      g.test_framework false
+			# test_frameworkファイルを作成する機能をfalse
+      g.helper false
+			# helperファイルを作成する機能をfalse
+      g.skip_routes true
+    end
   end
 end
