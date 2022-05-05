@@ -45,6 +45,15 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'annotate'
+gem 'better_errors'
+gem 'binding_of_caller'
+gem 'faker'
+gem 'pry-byebug'
+gem 'rubocop', require: false
+gem 'sorcery'
+
+#rails6.1.5で発生するデプロイ時のエラー解決のため導入
 gem 'net-smtp'
 gem 'net-imap'
 gem 'net-pop'
